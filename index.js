@@ -12,7 +12,7 @@ app.use(express.json());
 // const productosRouter = require("./routes/productos.router");
 // app.use("/productos", productosRouter);
 
-app.use("/productos", require("./routes/productos.router"));
+app.use("/productos", require("./routes/products.router"));
 
 app.get("/", (req, res) => {
   res.send("Hola desde Express!!");

@@ -40,7 +40,7 @@ router.post("/",(req,res) => {
     productos.push(producto);
     
     // res.send("post")
-    res.status(201).res.send(producto);
+    res.status(201).send(producto);
 
     });
 
