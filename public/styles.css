@@ -1,0 +1,453 @@
+*{
+    box-sizing: border-box;
+    font-family: "Glegoo", serif;
+        font-style: normal;
+    
+}
+
+
+.body{
+    margin: 0;
+    }
+
+
+/* ACA EMPIEZA el componente HEADER */
+.header{
+    background-color: aqua;
+   
+    
+}
+
+.menu{
+    background-color: #f2f2f2;
+    height: 151px;
+    margin-bottom: 15px;
+    
+}
+
+.logo{
+    background-color: #f2f2f2;
+    
+    text-align: center;
+    
+}
+
+.logo img{
+    /* display: block; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    
+    width: 128px;
+    height: 122px;
+    
+    
+}
+
+.nav{
+background-color: #f2f2f2;
+text-align: center;
+color: #000;
+height: 29px;
+}
+
+.nav a{
+    color: #000;
+    text-decoration: none;
+}
+
+/* Estilos para el botón de hamburguesa */
+.hamburger-menu {
+    display: none; /* Ocultar en dispositivos de pantalla grande */
+    cursor: pointer;
+    padding: 15px;
+}
+
+.hamburger-icon {
+    width: 35px;
+    height: 3px;
+    background-color: #000; /* Color del icono de hamburguesa */
+    margin: 10px 0px;
+}
+
+/* Estilos para las líneas adicionales */
+.hamburger-icon::before,
+.hamburger-icon::after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 3px;
+    background-color: #000; /* Color del icono de hamburguesa */
+    margin: 1px 0;
+}
+
+/* Alineación de las líneas adicionales */
+.hamburger-icon::before {
+    transform: translateY(-8px);
+}
+
+.hamburger-icon::after {
+    transform: translateY(5px);
+}
+
+    /* Estilos para la navegación MOBILE DEL COMPONENTE HEADER BREAK POINT */ 
+    @media screen and (max-width: 768px) {
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        height: 100px;
+        
+    }
+
+     /* Mostrar el botón de hamburguesa en dispositivos móviles */
+     .hamburger-menu {
+        display: block;
+        align-content: center;
+        padding: 15px;
+        position: relative; /* Necesario para los pseudo-elementos */
+    }
+
+    
+
+    /* Estilo para mostrar el menú al hacer clic en el botón de hamburguesa */
+    .nav.active {
+        display: block;
+    }
+
+    .logo{
+        align-content: center;
+    }
+    .logo img{
+        /* display: block; */
+        /* margin-left: auto;
+        margin-right: auto; */
+        
+        width: 70px;
+        height: 70px;
+        
+        
+        
+    }
+
+    .nav {
+        display: none; /* Ocultar por defecto en dispositivos móviles */
+        flex-direction: column;
+        align-items: center;
+        background-color: #f2f2f2; /* Color de fondo del menú móvil */
+        width: 100%;
+        height: max-content;
+        position: absolute;
+        top: 100px; /* Ajusta según la altura del header */
+        left: 0;
+        padding-top: 20px;
+        border-top: 1px solid #ccc;
+    }
+
+    .nav a {
+        
+        color: #000;
+        text-decoration: none;
+        padding: 10px;
+        margin: 5px;
+        display: block; /* Ajuste para hacer cada enlace una línea separada */
+    }
+
+   
+    
+}
+/* ACA EMPIEZA el componente MAIN */
+.main-text{
+    
+    background-color: #2bc0ae;
+    color: #f5f5f5;
+    text-align: center;
+    font-size: 1rem;
+
+}
+
+.slogan-1{
+padding: 30px 0;
+margin: 0;
+}
+
+.main-pic{
+    /* height: 584px; */
+    /* background-color: red; */
+    background-color: #f5f5f5;
+    /* width: auto; */
+   
+    
+    
+}
+.main-pic img{
+    
+    height: 36rem;
+    width: 100%;
+    object-fit: cover;
+    
+}  
+    /* Estilos para la navegación tablet DEL COMPONENTE main BREAK POINT */
+        @media screen and (max-width: 1024px) { 
+            .main-text{ 
+                
+                background-color: #7801C9;
+                padding: 0 100px;
+            }
+    
+            }
+    /* Estilos para la navegación MOBILE DEL COMPONENTE main BREAK POINT */
+    @media screen and (max-width: 768px) { 
+        .main-pic{
+            /* display: flex;
+            flex-direction: column;
+            align-items: stretch; */
+        background-color: #f5f5f5;
+            }
+            .main-text{ 
+                background-color: #FFCD01; 
+                padding: 0;
+                font-size: 0.7rem;
+            }
+    .main-pic img{
+    height: 15rem;
+        
+        width: 100%;
+        
+        
+    }  
+    }   
+   
+    
+
+
+/* ACA EMPIEZA el componente SECTION 1 */
+.nosotros{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #e7f5f3;
+    height: auto;
+    /* outline: solid; */
+   
+}
+
+.nosotros-parrafo{
+    overflow: hidden;
+    flex: 1 1 50%;
+    padding:2rem 3.43rem 2rem;
+    
+    
+}
+
+.nosotros-titulo{
+    font-size: 2.25rem;
+    
+}
+.nosotros-texto{
+text-align: justify;
+    font-size: 1.25rem;
+    
+
+}
+
+.nosotros-pic{
+    
+    display: flex;
+    flex: 1 1 50%;
+    justify-content: center;  
+    padding: 2rem 4rem 0rem; 
+    
+}
+.nosotros-pic img{
+    object-fit: contain;
+    /* display: inline-block; */
+    width: 100%;
+    height: 80%;
+    
+}
+.nosotros-parrafo div{
+    text-align: end;
+}
+.nosotros-boton {
+    display: inline-block;
+    width: 22rem; /* Utilizamos un ancho relativo */
+    height: auto; /* Permitimos que la altura se ajuste automáticamente */
+    background-color: #FFCD01;
+    color: #7801C9;
+    border-radius: 8px;
+    font-size: 1.5rem; /* Utilizamos un tamaño de fuente relativo */
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem 5rem; /* Utilizamos relleno relativo */
+    
+
+}
+    /* Estilos para la navegación TABLET DEL COMPONENTE SECTION1 */ 
+    @media screen and (max-width: 1024px) {
+        .nosotros-contenedor-boton{
+            display: flex;
+            justify-content: center;
+        }
+        .nosotros{
+            padding-bottom: 15px;
+            
+        }
+        .nosotros-titulo{
+            font-size: 1.5rem;
+        }
+
+        .nosotros-texto{
+            font-size: 1rem;
+        }
+    }
+
+    /* Estilos para la navegación MOBILE DEL COMPONENTE SECTION1 */ 
+    @media screen and (max-width: 768px) {
+        .nosotros{
+            
+            flex-direction: column;
+            text-align: center;
+            
+        }}
+        
+        
+/* ACA EMPIEZA el componente SECTION 2 */
+.section-productos{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.productos-titulo{
+    font-size: 2.25rem;
+}
+.productos-contenedor-imagenes{
+    display: flex;
+    justify-content: space-around;
+     
+}
+.productos-contenedor-imagenes img{
+    
+    width: 30%;
+}
+
+.productos-contenedor-boton{
+        
+    margin: 10px;
+    
+}
+.productos-btn{
+    display: inline-block;
+    max-width: 100%;/* se arreglo el desborde en menos de 300px de res*/
+    width: auto; 
+    height: auto; /* Permitimos que la altura se ajuste automáticamente */
+    background-color: #FFCD01;
+    color: #7801C9;
+    border-radius: 8px;
+    font-size: 1.5rem; /* Utilizamos un tamaño de fuente relativo */
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem 5rem;
+    word-wrap: break-word;
+    
+}
+
+/* Estilos para la navegación TABLET DEL COMPONENTE SECTION2 */ 
+@media screen and (max-width: 1024PX) {
+.productos-titulo{
+    font-size: 1.75rem;
+}
+}
+/* Estilos para la navegación MOBILE DEL COMPONENTE SECTION2 */ 
+    @media screen and (max-width: 768px) {
+        .productos-contenedor-imagenes{
+            flex-direction: column;}
+
+        .productos-contenedor-imagenes img{
+        
+                width: 100%;
+                margin: 5px 0;
+            }
+        
+        }
+        
+/* ACA EMPIEZA el componente FOOTER */
+
+.footer-main-container{
+    background-color: #e7f5f3;
+    display: flex;
+    padding: 20px;
+    margin-bottom: 10px;
+    
+    }
+.footer-nutrinatura-container {
+    
+    display: flex;
+    flex: 1 1 25%;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.footer-nutrinatura {
+    text-align: center;
+    
+}
+.footer-container-4col{
+    display: flex;
+    width: 100%;
+    
+    
+}
+
+
+.footer-nosotros,.footer-productos,.footer-contacto,.footer-redes{
+    
+    flex: 1 1 25%;
+    text-align: center;
+}
+
+
+.footer-nosotros a,.footer-productos a{
+    display: block;
+    
+}
+
+
+.footer-contacto p{
+    margin: 0;
+}
+.footer-redes-icons{
+    text-align: center;
+}
+.footer-copy{
+    align-self: flex-end;
+    background-color: #7801C9;
+    color: #f5f5f5;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.5px;
+}
+
+
+    /* Estilos para la navegación TABLET DEL COMPONENTE fOOTER */ 
+
+    @media screen and (max-width: 1024PX) {
+    .footer-main-container{
+            flex-direction: column;
+        }
+    
+
+       
+        
+}
+/* Estilos para la navegación MOBILE DEL COMPONENTE fOOTER */ 
+
+    @media screen and (max-width: 768px) {
+
+        .footer-container-4col{
+            flex-direction: column;
+        }
+        
+    }
+   
