@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         products.forEach(product => {
           const article = document.createElement('article');
           article.innerHTML = `
-            <img src="./assets/frutos-secos.jpg" alt="producto1">
+            <img src="./assets/carrito.jpg" alt="producto1">
             <h2>${product.nombre}</h2>
             <p>${product.precio}$</p>
           `;
