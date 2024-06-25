@@ -11,7 +11,7 @@ const index = (req, res) => {
     res.json(rows);
   });
 };
-
+//metodo GET
 const show = (req, res) => {
   const { id } = req.params; //desustrucuracion del objeto
 
@@ -28,7 +28,7 @@ const show = (req, res) => {
     res.json(rows[0]);// el get me trae el array dentro del elemento,por eso con el indice me trae el primer elemento que seria el array de ese identificador.
   });
 };
-
+//metodo POST
 const store = (req, res) => {
   const { nombre, stock, precio,categoria_id } = req.body;
 
@@ -44,6 +44,7 @@ const store = (req, res) => {
   });
 };
 
+//metodo PUT
 const update = (req, res) => {
   const { id } = req.params;
   const { nombre, stock, precio } = req.body;
@@ -65,6 +66,7 @@ const update = (req, res) => {
   });
 };
 
+//metodo DELETE
 const destroy = (req, res) => {
   const { id } = req.params;
 

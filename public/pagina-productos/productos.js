@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('http://localhost:3000/productos')
+    fetch('/productos')
       .then(response => response.json())
       .then(products => {
         const container = document.getElementById('productos-contenedor-cards');
